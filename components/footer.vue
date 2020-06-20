@@ -7,11 +7,11 @@
         <a href="http://www.belfordphoto.com/samples" target="_blank"><i class="fas fa-camera footer-icon"></i></a>
       </div>
       <p class="lead footer-p">
-        kcbelford@hotmail.com | 425.501.0646
+        {{ email }} | {{ phone }}
       </p>
       <div class="footer-p-mobile">
-        <p>kcbelford@hotmail.com</p>
-        <p>425.501.0646</p>
+        <p>{{ email }}</p>
+        <p>{{ phone }}</p>
       </div>
     </footer>
   </section>
@@ -19,6 +19,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      email: 'kcbelford@hotmail.com',
+      phone: '425.501.0646'
+    }
+  }
 }
 </script>
 

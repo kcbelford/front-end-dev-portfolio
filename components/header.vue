@@ -3,8 +3,8 @@
     <div class="logo-headers">
       <img class="logo" src="~/static/kbfedlogo.png" alt="">
       <div class="header-headers">
-        <h1 class="kb">Kevin Belford</h1>
-        <h2 class="fed">Front-End Developer</h2>
+        <h1 class="kb">{{ name }}</h1>
+        <h2 class="fed">{{ job }}</h2>
       </div>
     </div>
     <i class="fas fa-chevron-down"></i>
@@ -13,6 +13,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      name: 'Kevin Belford',
+      job: 'Front-End Developer'
+    }
+  }
 }
 </script>
 

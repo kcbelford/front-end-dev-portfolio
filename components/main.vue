@@ -1,23 +1,22 @@
 <template lang="html">
   <main>
-      <h1 class="main-headers text-center">A little about me</h1>
+      <h1 class="main-headers text-center">{{ aboutHeader }}</h1>
       <div class="about-content">
         <img class="kevin-img" src="~/static/BELFORDFAM.jpg" alt="">
         <p class="about-p lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {{ aboutContent }}
         </p>
       </div>
-      <h1 class="main-headers text-center">Projects</h1>
+      <h1 class="main-headers text-center">{{ projectsHeader }}</h1>
       <div class="projects-container">
-        <section v-for="project in projects" :key="project.id" class="project-section">
+        <section v-for="project in portfolio" :key="project.id" class="project-section">
           <h2 class="project-title">{{ project.title }}</h2>
           <img class="project-img" :src="project.image" :alt="project.alt">
           <p class="lead project-description">{{ project.description }}</p>
-          <p class="lead">Technologies Used:</p>
+          <p class="lead">{{ techHeader }}</p>
           <p class="technologies">{{ project.technologies }}</p>
-          <a class="project-link" :href="project.site" target="_blank">Visit Site</a>
-          <a class="project-link" :href="project.code" target="_blank">View Code</a>
+          <a class="project-link" :href="project.site" target="_blank">{{ siteButton }}</a>
+          <a class="project-link" :href="project.code" target="_blank">{{ codeButton }}</a>
         </section>
       </div>
     </main>
@@ -28,7 +27,14 @@ export default {
 
   data () {
     return {
-      projects: [
+      aboutHeader: 'A little about me',
+      aboutContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      projectsHeader: 'Projects',
+      techHeader: 'Technologies Used:',
+      siteButton: 'Visit Site',
+      codeButton: 'View Code',
+
+      portfolio: [
         {
           id: 0,
           title: 'Find My Brewery',
