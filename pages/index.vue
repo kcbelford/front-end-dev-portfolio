@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section>
     <port-header/>
     <port-main/>
     <port-footer/>

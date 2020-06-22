@@ -1,25 +1,25 @@
 <template lang="html">
-  <main>
-      <h1 class="main-headers text-center">{{ aboutHeader }}</h1>
-      <div class="about-content">
-        <img class="kevin-img" src="~/static/BELFORDFAM.jpg" alt="">
-        <p class="about-p lead">
-          {{ aboutContent }}
-        </p>
-      </div>
-      <h1 class="main-headers text-center">{{ projectsHeader }}</h1>
-      <div class="projects-container">
-        <section v-for="project in portfolio" :key="project.id" class="project-section">
-          <h2 class="project-title">{{ project.title }}</h2>
-          <img class="project-img" :src="project.image" :alt="project.alt">
-          <p class="lead project-description">{{ project.description }}</p>
-          <p class="lead">{{ techHeader }}</p>
-          <p class="technologies">{{ project.technologies }}</p>
-          <a class="project-link" :href="project.site" target="_blank">{{ siteButton }}</a>
-          <a class="project-link" :href="project.code" target="_blank">{{ codeButton }}</a>
-        </section>
-      </div>
-    </main>
+  <main id="about">
+    <h1 class="main-headers text-center">{{ aboutHeader }}</h1>
+    <div class="about-content">
+      <img class="kevin-img" src="~/static/BELFORDFAM.jpg" alt="">
+      <p class="about-p lead">
+        {{ aboutContentOne }}
+      </p>
+    </div>
+    <h1 class="main-headers text-center">{{ projectsHeader }}</h1>
+    <div class="projects-container">
+      <section v-for="project in portfolio" :key="project.id" class="project-section">
+        <h2 class="project-title">{{ project.title }}</h2>
+        <img class="project-img" :src="project.image" :alt="project.alt">
+        <p class="lead project-description">{{ project.description }}</p>
+        <p class="lead">{{ techHeader }}</p>
+        <p class="technologies">{{ project.technologies }}</p>
+        <a class="project-link" :href="project.site" target="_blank">{{ siteButton }}</a>
+        <a class="project-link" :href="project.code" target="_blank">{{ codeButton }}</a>
+      </section>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       aboutHeader: 'A little about me',
-      aboutContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      aboutContentOne: 'My name is Kevin Belford and I am a front-end developer from the Pacific Northwest. My background is primarily in commercial photography and photo studio leadership, but I found myself looking for a new challenge and decided to change the course of my career. Being a visual and creative person, I was naturally drawn to the front-end. A few skills I possess that have been invaluable to front-end development are my keen attention to detail, my patience for problem-solving, and my naturally calm personality. One thing that excites me about the developer world is the never-ending advancements in technology requiring a constant need to keep learning. And a bit about my personal life: I’ve been playing drums most of my life (I was honored to play in the Sounders FC band, Soundwave, for a couple years a while back). I’m a Sounders FC and Liverpool FC fan. I love pizza and have been mastering the art of home-made pizza for the past eight years. ',
       projectsHeader: 'Projects',
       techHeader: 'Technologies Used:',
       siteButton: 'Visit Site',

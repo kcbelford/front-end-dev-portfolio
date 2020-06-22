@@ -1,20 +1,18 @@
 <template lang="html">
-  <section>
-    <footer>
-      <div class="">
-        <a href="https://github.com/kcbelford" target="_blank"><i class="fab fa-github footer-icon"></i></a>
-        <a href="https://www.linkedin.com/in/kevin-belford" target="_blank"><i class="fab fa-linkedin-in footer-icon"></i></a>
-        <a href="http://www.belfordphoto.com/samples" target="_blank"><i class="fas fa-camera footer-icon"></i></a>
-      </div>
-      <p class="lead footer-p">
-        {{ email }} | {{ phone }}
-      </p>
-      <div class="footer-p-mobile">
-        <p>{{ email }}</p>
-        <p>{{ phone }}</p>
-      </div>
-    </footer>
-  </section>
+  <footer>
+    <div class="">
+      <a href="https://github.com/kcbelford" target="_blank"><i class="fab fa-github footer-icon"></i></a>
+      <a href="https://www.linkedin.com/in/kevin-belford" target="_blank"><i class="fab fa-linkedin-in footer-icon"></i></a>
+      <a href="http://www.belfordphoto.com/samples" target="_blank"><i class="fas fa-camera footer-icon"></i></a>
+    </div>
+    <p class="lead footer-p">
+      {{ email }} | {{ phone }}
+    </p>
+    <div class="footer-p-mobile">
+      <p>{{ email }}</p>
+      <p>{{ phone }}</p>
+    </div>
+  </footer>
 </template>
 
 <script>

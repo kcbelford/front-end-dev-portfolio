@@ -7,7 +7,11 @@
         <h2 class="fed">{{ job }}</h2>
       </div>
     </div>
-    <i class="fas fa-chevron-down"></i>
+    <i
+    @click="scroll"
+    class="fas fa-chevron-down"
+    >
+    </i>
   </header>
 </template>
 
@@ -16,7 +20,15 @@ export default {
   data() {
     return {
       name: 'Kevin Belford',
-      job: 'Front-End Developer'
+      job: 'Front-End Developer',
+      hover: false
+    }
+  },
+
+  methods: {
+    scroll: function() {
+      const element = document.getElementById('about');
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }
@@ -66,6 +78,11 @@ header {
   position: relative;
   top: 12rem;
   color: #F9F8F9;
+}
+
+.fa-chevron-down:hover {
+  transition: all .07s ease-in-out;
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 577px) {
