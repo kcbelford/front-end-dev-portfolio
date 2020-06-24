@@ -5,10 +5,13 @@
       <img class="kevin-img" src="~/static/BELFORDFAM.jpg" alt="">
       <p class="about-p lead">
         {{ aboutContentOne }}
+        <br>
+        <br>
+        {{ aboutContentTwo }}
       </p>
     </div>
     <h1 class="main-headers text-center">{{ projectsHeader }}</h1>
-    <div class="projects-container">
+    <div class="projects-container fade-in">
       <section v-for="project in portfolio" :key="project.id" class="project-section">
         <h2 class="project-title">{{ project.title }}</h2>
         <img class="project-img" :src="project.image" :alt="project.alt">
@@ -28,7 +31,8 @@ export default {
   data () {
     return {
       aboutHeader: 'A little about me',
-      aboutContentOne: 'My name is Kevin Belford and I am a front-end developer from the Pacific Northwest. My background is primarily in commercial photography and photo studio leadership, but I found myself looking for a new challenge and decided to change the course of my career. Being a visual and creative person, I was naturally drawn to the front-end. A few skills I possess that have been invaluable to front-end development are my keen attention to detail, my patience for problem-solving, and my naturally calm personality. One thing that excites me about the developer world is the never-ending advancements in technology requiring a constant need to keep learning. And a bit about my personal life: I’ve been playing drums most of my life (I was honored to play in the Sounders FC band, Soundwave, for a couple years a while back). I’m a Sounders FC and Liverpool FC fan. I love pizza and have been mastering the art of home-made pizza for the past eight years. ',
+      aboutContentOne: 'My name is Kevin Belford and I am a front-end developer from the Pacific Northwest. My background is primarily in commercial photography and photo studio leadership, but after several years in the field, I found myself looking for a new challenge and decided to change the course of my career. Being a visual and creative person, I was naturally drawn to front-end development. My naturally calm personality compliments the skills I have found to be invaluable to front-end development including my keen attention to detail and my perseverance when it comes to problem-solving. One thing that excites me about the developer world is the never-ending advancements in technology requiring a constant need to keep learning.',
+      aboutContentTwo: 'A bit about my personal life: I’ve been playing drums most of my life (a while back, I was honored to play in the Sounders FC band, Soundwave, for a couple years). I’m a big soccer fan and support Sounders FC and Liverpool FC. I love pizza and have been mastering the art of home-made pizza for the past eight years.',
       projectsHeader: 'Projects',
       techHeader: 'Technologies Used:',
       siteButton: 'Visit Site',
@@ -52,7 +56,7 @@ export default {
           alt: 'screen shot of drum machine website',
           description: 'Being a drummer myself, I know what it’s like to lug your kit around everywhere.  Sometimes you just want to experiment with some beat ideas without having to set everything up. This drum machine, styled after the infamous Roland TR-808, lets the user tinker and have fun without the fuss.',
           technologies: 'HTML, CSS, jQuery',
-          site: 'https://tender-pasteur-af62dd.netlify.app/',
+          site: 'https://909-drum-machine.netlify.app/',
           code: 'https://github.com/kcbelford/drum-machine'
         },
         {

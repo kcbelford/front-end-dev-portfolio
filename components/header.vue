@@ -20,8 +20,7 @@ export default {
   data() {
     return {
       name: 'Kevin Belford',
-      job: 'Front-End Developer',
-      hover: false
+      job: 'Front-End Developer'
     }
   },
 
@@ -81,8 +80,9 @@ header {
 }
 
 .fa-chevron-down:hover {
-  transition: all .07s ease-in-out;
-  transform: scale(1.5);
+  transition: all 0.2s ease-in-out;
+  transform: scale(2);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 577px) {
