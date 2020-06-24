@@ -55,6 +55,12 @@ header {
   width: 6rem;
 }
 
+.header-headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .kb {
   font-size: 2rem;
   padding-left: 1.5rem;
