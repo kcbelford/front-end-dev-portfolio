@@ -55,17 +55,11 @@ header {
   width: 6rem;
 }
 
-.header-headers {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .kb {
   font-size: 2rem;
   padding-left: 1.5rem;
   padding-bottom: 0.05rem;
-  letter-spacing: 0.69rem;
+  letter-spacing: 0.68rem;
   text-transform: uppercase;
   color: #29486B;
 }
@@ -101,9 +95,9 @@ header {
   }
 
   .kb {
-    font-size: 1.63rem;
+    font-size: 1.6rem;
     padding-left: 0;
-    letter-spacing: 0.62rem;
+    letter-spacing: 0.7rem;
   }
 
   .fed {
