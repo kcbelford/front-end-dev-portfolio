@@ -2,7 +2,7 @@
   <main id="about">
     <h1 class="main-headers text-center">{{ aboutHeader }}</h1>
     <div class="about-content">
-      <img class="kevin-img" src="~/static/BELFORDFAM.jpg" alt="">
+      <img class="kevin-img" src="~/static/BELFORDFAM.jpg" alt="Kevin Belford, his wife, daughter and son sitting on their livingroom floor.">
       <p class="about-p lead">
         {{ aboutContentOne }}
         <br>
