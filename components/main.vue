@@ -45,7 +45,7 @@ export default {
           image: require('~/static/find-my-brewery.png'),
           alt: 'screen shot of find my brewery website',
           description: 'Every craft beer enthusiast should have a brewery they can call their own. This site was created to aid in that discovery. With the use of the Open Brewery DB API, users can search via keyword, city or brewery name to find their new favorite brewery.',
-          technologies: 'HTML, CSS, JavaScript, Node.js, Nuxt.js, Open Brewery DB API',
+          technologies: 'HTML, CSS, JavaScript, Nuxt.js, Open Brewery DB API',
           site: 'https://find-my-brewery.netlify.app/',
           code: 'https://github.com/kcbelford/find-my-brewery-gh'
         },
@@ -65,7 +65,7 @@ export default {
           image: require('~/static/pizza.png'),
           alt: 'screen shot of pizza website',
           description: 'Any pizza lover will appreciate this site. It includes a brief history of pizza, an overview of different styles of pizza and a list of some of the best pizzerias in the USA.',
-          technologies: 'HTML, CSS, Javascript, Bootstrap, Node.js, Vue.js, VueRouter',
+          technologies: 'HTML, CSS, Javascript, Bootstrap, Vue.js, VueRouter',
           site: 'https://piz-za.netlify.app/',
           code: 'https://github.com/kcbelford/pizza-gh'
         },
